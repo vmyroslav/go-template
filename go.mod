@@ -1,5 +1,3 @@
-module home-bartender-back
+module github.com/vmyroslav/go-template
 
-go 1.22
-
-require github.com/vmyroslav/home-lib v0.1.0 // indirect
+go 1.24

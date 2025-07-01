@@ -1,16 +1,36 @@
 [![Action Status](https://github.com/vmyroslav/go-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/vmyroslav/go-template/actions/workflows/ci.yaml)
 
-# Project
+# Go Template
 
-## List of useful commands:
+A minimal Go project template with comprehensive linting, testing, and CI/CD setup.
 
-* `task help` - shows the list of all available commands
+## Features
+
+- Go 1.24 with modern tooling
+- Comprehensive linting with golangci-lint
+- Task automation with Taskfile
+- GitHub Actions CI/CD
+- Release management with changelog automation
+
+## Quick Start
 
 ### Prerequisites
 
-- Go version 1.22 or later
-- Taskfile for task running
+- Go 1.24 or later
+- [Task](https://taskfile.dev/) for task automation
 
-### Installing
+### Development Commands
 
-A step by step series of examples that tell you how to get a development environment running.
+- `task` - Show all available tasks
+- `task test` - Run tests with coverage
+- `task lint` - Run linter checks
+- `task fmt` - Format code
+- `task clean` - Clean and tidy dependencies
+
+### Release Process
+
+```bash
+task ci:prepare-release VERSION=1.0.0
+```
+
+This validates the version bump, extracts release notes from CHANGELOG.md, and updates the changelog.
