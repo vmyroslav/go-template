@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.0] - 2025-07-01
+
 ### Added
 - Initial project template structure
 - Basic Go module setup with Go 1.24
