@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- GitHub issue templates for bug reports and feature requests
+- GitHub pull request template with comprehensive checklist
+
 ## [v1.0.0] - 2025-07-01
 
 ### Added
