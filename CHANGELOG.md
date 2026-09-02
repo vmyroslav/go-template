@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Vulnerability scanning with govulncheck (part of `task fmt` and a CI step)
+- gofumpt pinned via the go.mod `tool` directive (no global install needed)
+
+### Changed
+- Upgraded Go to 1.27
+- Upgraded golangci-lint to v2.13.2 and its GitHub Action to v9
+- Upgraded GitHub Actions: checkout to v7, setup-go to v7
+- CI test step now runs `task test` to keep test flags in one place
+
+### Removed
+- Stale `.gitignore` entries left over from other projects (terraform, serverless, credentials)
+
 ## [v1.2.0] - 2025-10-14
 
 ### Changed

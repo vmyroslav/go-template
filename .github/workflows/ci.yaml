@@ -30,11 +30,13 @@ jobs:
       - name: lint
         uses: golangci/golangci-lint-action@v9
         with:
-          version: v2.5.0
+          version: v2.13.2
 
       - name: Test
-        run: |
-          go test -timeout=60s -race -covermode=atomic -coverprofile=$GITHUB_WORKSPACE/profile.cov ./...
+        run: task test
+
+      - name: Vulnerability scan
+        run: go run golang.org/x/vuln/cmd/govulncheck@latest ./...
 
       - name: Submit coverage
         uses: codecov/codecov-action@v7

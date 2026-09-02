@@ -11,12 +11,6 @@ CLAUDE.md
 # Secrets
 /.env
 
-/.serverless
-/terraform/.terraform.lock.hcl
-/terraform/.terraform/
-/unit.coverprofile
-/credentials.json
-
 # Tests and artifacts
 profile.cov
 

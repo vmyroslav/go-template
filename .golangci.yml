@@ -10,6 +10,7 @@ linters:
     - cyclop
     - dogsled
     - dupl
+    - embeddedstructfieldcheck
     - errcheck
     - errchkjson
     - errname
@@ -17,7 +18,6 @@ linters:
     - gochecknoinits
     - goconst
     - gocritic
-    - gocyclo
     - gosec
     - govet
     - importas
@@ -26,9 +26,11 @@ linters:
     - loggercheck
     - mirror
     - misspell
+    - modernize
     - nakedret
     - nestif
     - noctx
+    - noinlineerr
     - prealloc
     - reassign
     - revive
@@ -60,8 +62,6 @@ linters:
       enable:
         - fieldalignment
         - shadow
-    lll:
-      line-length: 140
     misspell:
       locale: US
   exclusions:

@@ -6,8 +6,9 @@ A minimal Go project template with comprehensive linting, testing, and CI/CD set
 
 ## Features
 
-- Go 1.24 with modern tooling
-- Comprehensive linting with golangci-lint
+- Go 1.27 with tooling
+- Linting with golangci-lint
+- Vulnerability scanning with govulncheck
 - Task automation with Taskfile
 - GitHub Actions CI/CD
 - Release management with changelog automation
@@ -16,7 +17,7 @@ A minimal Go project template with comprehensive linting, testing, and CI/CD set
 
 ### Prerequisites
 
-- Go 1.24 or later
+- Go 1.27 or later
 - [Task](https://taskfile.dev/) for task automation
 
 ### Development Commands
@@ -24,8 +25,7 @@ A minimal Go project template with comprehensive linting, testing, and CI/CD set
 - `task` - Show all available tasks
 - `task test` - Run tests with coverage
 - `task lint` - Run linter checks
-- `task fmt` - Format code
-- `task clean` - Clean and tidy dependencies
+- `task fmt` - Tidy dependencies, format code, and scan for vulnerabilities
 
 ### Release Process
 

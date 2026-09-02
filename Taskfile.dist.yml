@@ -22,15 +22,13 @@ tasks:
     cmds:
       - go test -timeout=60s -race -covermode=atomic -coverprofile=profile.cov ./...
   fmt:
-    desc: Format project files
+    desc: Tidy, format, and check project files
     cmds:
-      - find . -name '*.go' -type f -exec gofumpt -w {} +
-      - golangci-lint run --fix
-  clean:
-    desc: Clean up and format code
-    cmds:
-      - defer: {task: fmt}
       - go mod tidy
+      - go fix ./...
+      - go tool gofumpt -w .
+      - golangci-lint run --fix
+      - go run golang.org/x/vuln/cmd/govulncheck@latest ./...
   update-deps:
     desc: Update Go dependencies
     cmds:
