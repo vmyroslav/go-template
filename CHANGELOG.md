@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.3.0] - 2026-09-02
+
 ### Added
 - Vulnerability scanning with govulncheck (part of `task fmt` and a CI step)
 - gofumpt pinned via the go.mod `tool` directive (no global install needed)
