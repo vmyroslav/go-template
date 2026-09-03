@@ -27,7 +27,7 @@ jobs:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: lint
+      - name: Lint
         uses: golangci/golangci-lint-action@v9
         with:
           version: v2.13.2
